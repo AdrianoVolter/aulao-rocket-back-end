@@ -7,7 +7,8 @@ class Tech extends Model {
             name: DataTypes.STRING,
             
         },{
-            sequelize: connection
+            sequelize: connection,
+            tableName: 'techs', // nome da tabela no banco de dados
         })       
     }
     static associate(models){
