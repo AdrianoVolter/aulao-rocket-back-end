@@ -1,3 +1,7 @@
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 module.exports ={
     host: process.env.HOST ,
     dialect: process.env.DIALECT ,
