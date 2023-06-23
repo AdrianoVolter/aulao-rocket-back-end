@@ -1,6 +1,6 @@
 module.exports ={
-    dialect: process.env.DIALECT ,
     host: process.env.HOST ,
+    dialect: process.env.DIALECT ,
     username: process.env.USERNAMEDB ,
     password: process.env.PASSWORDDB ,
     database: process.env.DATABASE ,
