@@ -14,5 +14,6 @@ router.post('/user/:user_id/addresses', addressControllers.store)
 
 router.get('/user/:user_id/techs', techControllers.index)
 router.post('/user/:user_id/techs', techControllers.store)
+router.delete('/user/:user_id/techs', techControllers.delete)
 
 module.exports = router;
