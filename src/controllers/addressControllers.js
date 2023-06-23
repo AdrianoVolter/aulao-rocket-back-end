@@ -8,6 +8,10 @@ module.exports = {
         const user  = await User.findByPk(user_id,{
             include: { association: 'addresses'}
         });
+
+        if(!user){
+            return res.status(400).json({error: 'User not found!'})
+        }
         return res.json(user)
        
     },
